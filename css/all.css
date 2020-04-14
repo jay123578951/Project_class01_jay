@@ -1,0 +1,276 @@
+/* cssReset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* bodyCss */
+* {
+    font-family: 'Roboto','PingFang SC','微軟正黑體',sans-serif;
+}
+
+body {
+    color: #000000;
+}
+
+/* common */
+.mw-contain {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mb-section {
+    margin-bottom: 72px;
+}
+
+.mainTitle {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 16px;
+}
+
+.mainTitle-center {
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.mainTitle-ch {
+    font-size: 32px;
+    line-height: 45px;
+    font-weight: 500;
+    margin-right: 16px;
+}
+
+.mainTitle-en {
+    font-size: 24px;
+    line-height: 32px;
+    color: #A00404;
+    font-weight: 500;
+}
+
+.dot {
+    width: 16px;
+    height: 16px;
+    background: #96A9C4;
+    border-radius: 50%;
+    margin: 8px 16px;
+}
+
+.df-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;    
+}
+
+.df-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;    
+}
+
+/* fontCss */
+.a-text-md {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 300;
+}
+
+.a-text-sm {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.fc-white {
+    color: #fff;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+/* borderCss */
+.border-b-white {
+    border-bottom: 1px solid #fff;
+}
+
+/* marginCss */
+.mb-32 {
+    margin-bottom: 32px;
+}
+
+/* backgroundCss */
+.bg-light {
+    background: #96A9C4;
+}
+
+.bg-dark {
+    background: #415165;
+}
+
+/* header */
+.pageTop-title {
+    border-bottom: 2px solid #000;
+    margin-bottom: 48px;
+}
+
+.pageTop-title h1 {
+    width: 280px;
+    font-size: 80px;
+    line-height: 90px;
+    font-family: 'Andale Mono',serif;
+    font-weight: normal;
+    text-align: left;
+    letter-spacing: 0px;
+    margin: 48px 0 24px 0;
+}
+
+#pageTop img {
+    display: block;
+    padding-bottom: 48px;
+}
+
+/* 學歷 */
+.edcuationCnt {
+    position: relative;
+}
+
+.edcuationCnt:before {
+    content: "";
+    width: 1px;
+    height: 66px;
+    background: #96A9C4;
+    display: block;
+    position: absolute;
+    top: 16px;
+    left: 24px;
+}
+
+/* 技能 */
+#skills {
+    position: relative;
+}
+
+.skills-bg {
+    width: 100%;
+    height: 360px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.skills-title {
+    margin-bottom: 40px;
+}
+
+.skillsCnt {
+    z-index: 2;
+    position: relative;
+    padding: 24px 102px 55.5px 102px;
+    box-sizing: border-box;
+}
+
+.skillsCnt-item {
+    display: flex;
+    justify-content: center;
+}
+
+.skillsCnt-item ul {
+    padding-left: 24px;
+    border-left: 1px solid #96A9C4;
+}
+
+.skillsCnt-item li {
+    margin-bottom: 16px;
+}
+
+.skillsCnt-item li:last-of-type {
+    margin-bottom: 0;
+}
+
+/* 工作經驗 */
+.workexp-title {
+    margin-bottom: 22px;
+}
+
+.workexp-item {
+    border-left: 1px solid #96A9C4;
+    margin-left: 24px;
+    padding-left: 24px;
+}
+
+.workexp-item img {
+    display: block;
+    margin: 8px 0 8.15px 0;
+}
+
+.workexp-item {
+    width: 642px;
+}
+
+/* 聯絡方式 */
+.contact {
+    padding: 24px 0 48px 0;
+}
+
+.contact ul {
+    text-align: center;
+}
+
+.contact li {
+    margin-bottom: 16px;
+}
+
+.contact li:last-of-type {
+    margin-bottom: 0;
+}
+
+.contact-icon img:nth-of-type(2) {
+    margin: 0 24px;
+}
